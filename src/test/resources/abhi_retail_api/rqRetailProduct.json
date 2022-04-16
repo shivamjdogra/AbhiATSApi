@@ -1,0 +1,253 @@
+{
+    "ReceiptCreation": {
+		"collectionRcvdDate": "${collectionRcvdDate}", 
+        "collectionAmount": "${collectionAmount}",
+        "collectionMode": "RTGS/ NEFT",
+        "instrumentNumber": "${instrumentNumber}", 
+        "paymentByName": "Rohan Sharma",
+        "paymentBy": "Customer",
+        "cdAcNo": "",
+        "instrumentDate": "${instrumentDate}", 
+        "expiryDate": "",
+        "CardNo": "",
+        "payerType": "Customer",
+        "chequeType": "",
+        "officeLocation": "10MHMUM01",
+        "payerCode": "",
+        "paymentByRelationship": "Self",
+        "TerminalID": "FYAgmcCOAfGASp",
+        "micrNo": "NA",
+        "PaymentGatewayName": "Razorpay SellerPortal",
+        "modeOfEntry": "Direct",
+        "ifscCode": "ABHY0065208", 
+        "remarks": "",
+        "ReceiptNumber": ""
+	},
+    "MemObj": { 
+       "Member": [
+       <#if MemberNo_1?exists>
+            {
+            	"MemberNo": "${MemberNo_1}",
+                "Middle_Name": "",
+                "occupation": "O001",
+                "Email": "${Member1_Email}", 
+                "whetheroccupationrequire": {
+                    "answer": "0"
+                },
+                "Marital_Status": "",
+                "MemberPED": [],
+                "NatureOfDuty": "ACCOUNTANT",
+                "Gender": "${Member1_Gender}", 
+                "exactDiagnosis": "",
+                "Nominee_Contact_Number": "${Member1_Mobile_Number}", 
+                "productComponents": [
+                    {
+                        "productComponentName": "RoomCategory",
+                        "productComponentValue": "Single Private A/c Room"
+                    },
+                    {
+                        "productComponentName": "SumInsured",
+                        "productComponentValue": "${Member1_productComponentValue}" 
+                    },
+                    {
+                        "productComponentName": "Zone",
+                        "productComponentValue": "Z001"
+                    }
+                ],
+                "Salutation": "${Member1_Salutation}", 
+                "Relation_Code": "${Member1_Relation_Code}", 
+                "First_Name": "${Member1_First_Name}", 
+                "PrimaryMember": "${Member1_PrimaryMember}",
+                "doctorName": "",
+                "Nominee_First_Name": "Rohit",
+                "dateOfDiagnosis": "",
+                "height": 165,
+                "DateOfBirth": "${Member1_DateOfBirth}", 
+                "Designation": "Salaried",
+                "Nominee_Last_Name": "Sharma", 
+                "MemberQuestionDetails": [],
+                "labReport": "",
+                "phoneNumberHosital": "",
+                "Nominee_Relationship_Code": "R007",
+                "weight": "62",
+                "lastDateConsultation": "",
+                "hospitalName": "",
+                "City": "Bangalore",
+                "dischargeCardSummary": "",
+                "Last_Name": "${Member1_Last_Name}",
+                "optionalCovers": [
+                    {
+                        "CoverPartCode": "",
+                        "CoverPartValue": "",
+                        "optionalCoverName": "Personal Accident Cover (AD, PTD)",
+                        "optionalCoverValue": "1000000"
+                    }
+             
+                ],
+                "Mobile_Number": "${Member1_Mobile_Number}", 
+                "detailsOfTreatmentGiven": "",
+                "Nominee_Home_Address": "",
+                "AnnualIncome": 0
+            }</#if><#if MemberNo_2?exists>,
+            {
+            	"MemberNo": "${MemberNo_2}",
+                "Middle_Name": "",
+                "occupation": "O001",
+                "Email": "${Member2_Email}", 
+                "whetheroccupationrequire": {
+                    "answer": "0"
+                },
+                "Marital_Status": "",
+                "MemberPED": [],
+                "NatureOfDuty": "ACCOUNTANT",
+                "Gender": "${Member2_Gender}", 
+                "exactDiagnosis": "",
+                "Nominee_Contact_Number": "${Member2_Mobile_Number}", 
+                "productComponents": [
+                    {
+                        "productComponentName": "RoomCategory",
+                        "productComponentValue": "Single Private A/c Room"
+                    },
+                    {
+                        "productComponentName": "SumInsured",
+                        "productComponentValue": "${Member2_productComponentValue}" 
+                    },
+                    {
+                        "productComponentName": "Zone",
+                        "productComponentValue": "Z001"
+                    }
+                ],
+                "Salutation": "${Member2_Salutation}", 
+                "Relation_Code": "${Member2_Relation_Code}", 
+                "First_Name": "${Member2_First_Name}", 
+                "PrimaryMember": "${Member2_PrimaryMember}",
+                "doctorName": "",
+                "Nominee_First_Name": "Rohit",
+                "dateOfDiagnosis": "",
+                "height": 165,
+                "DateOfBirth": "${Member2_DateOfBirth}", 
+                "Designation": "Salaried",
+                "Nominee_Last_Name": "Sharma", 
+                "MemberQuestionDetails": [],
+                "labReport": "",
+                "phoneNumberHosital": "",
+                "Nominee_Relationship_Code": "R007",
+                "weight": "62",
+                "lastDateConsultation": "",
+                "hospitalName": "",
+                "City": "Bangalore",
+                "dischargeCardSummary": "",
+                "Last_Name": "${Member2_Last_Name}",
+                "optionalCovers": [
+                    {
+                        "CoverPartCode": "",
+                        "CoverPartValue": "",
+                        "optionalCoverName": "Personal Accident Cover (AD, PTD)",
+                        "optionalCoverValue": "1000000"
+                    }
+             
+                ],
+                "Mobile_Number": "${Member2_Mobile_Number}", 
+                "detailsOfTreatmentGiven": "",
+                "Nominee_Home_Address": "",
+                "AnnualIncome": 0
+            }</#if>
+        ]
+    },
+    "PolicyCreationRequest": {
+        "Source_Name": "Seller Portal",
+        "IsPayment": "${IsPayment}",
+        "EnumIsMandate": "0",
+        "SumInsured_Type": "${SumInsured_Type}",
+        "agentSignatureDate": "",
+        "TrackerRefCode": "",
+        "businessSourceChannel": "Seller Portal",
+        "EmployeeDiscount": "0",
+        "familyDoctor": {
+            "qualification": "",
+            "pinCode": "",
+            "fullName": "",
+            "addressLine1": "",
+            "emailId": "",
+            "RegistrationNumber": "",
+            "addressLine2": "",
+            "contact_number": ""
+        },
+        "BusinessType": "New Business",
+        "AutoDebit": "0",
+        "Member_Type_Code": "AH01",
+        "QuoteDate": "${QuoteDate}",
+        "Plan_Code": "${Plan_Code}",
+        "intermediaryBranchCode": "10MHMUM01",
+        "Customer_Signature_Date": "",
+        "goGreen": "1",
+        "Product_Code": "${Product_Code}",
+        "AutoRenewal": "0",
+        "intermediaryCode": "5100003",
+        "RefCode6": "",
+        "Policy_Tanure": "${Policy_Tanure}",
+        "SPID": "",
+        "leadID": "${leadID}",
+		"Quotation_Number": "${Quotation_Number}"
+    },
+    "ClientCreation": {
+        "homeSTDLandlineNo": "",
+        "homeSTDLandlineNo2": "",
+        "dateofBirth": "${dateofBirth}",
+        "GSTIN": "",
+        "mailingSTDLandlineNo2": "",
+        "occupation": "ACCOUNTANT",
+        "endDate": "",
+        "bankAccountNo": "${bankAccountNo}",
+        "GSTRegistrationStatus": "Consumers",
+        "IsEIAavailable": "0",
+        "mailingPinCode": "400001",
+        "mailingAddressLine3": "",
+        "uidNo": "",
+        "mailingAddressLine1": "",
+        "mailingAddressLine2": "",
+        "mailingContactMobileNo": "",
+        "others": "",
+        "WhatsAppNo": "",
+        "ApplyEIA": "0",
+        "IdProof": "Aadhar Card",
+        "homeContactMobileNo2": "",
+        "primaryEmailID": "${primaryEmailID}",
+        "homeAddressLine2": "Malibu Beach house",
+        "homeAddressLine1": "Beverly hills ",
+        "homeAddressLine3": "",
+        "firstName": "${firstName}",
+        "bankAccounRohanype": "Saving",
+        "nationality": "Indian",
+        "pinCode": "400001",
+        "sameAsHomeAddress": "",
+        "salutation": "${salutation}",
+        "startDate": "",
+        "maritalStatus": "Married",
+        "lastName": "${lastName}",
+        "annualIncome": "500000",
+        "gender": "${gender}",
+        "homeFaxNo": "",
+        "contactPerson": "",
+        "mailingArea": "",
+        "homePinCode": "400001",
+        "mailingContactMobileNo2": "",
+        "ifscCode": "ABHY0065208",
+        "residenceProof": "",
+        "EIAWith": "",
+        "stdLandlineNo": "",
+        "panNo": "",
+        "contactMobileNo": "${contactMobileNo}",
+        "AddressProof": "",
+        "homeContactMobileNo": "",
+        "AccounRohanype": "02",
+        "mailingFaxNo": "",
+        "ageProof": "111111111111",
+        "homeArea": "",
+        "DOBProof": "",
+        "educationalQualification": "2",
+        "middleName": "",
+        "mailingSTDLandlineNo": "",
+        "remarks": ""
+    }
+}

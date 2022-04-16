@@ -5,10 +5,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.qaprosoft</groupId>
-	<artifactId>carina-demo</artifactId>
+	<artifactId>APIAutomationCarina</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
-	<name>Carina Demo</name>
+	<name>APIAutomationCarina</name>
 	<url>http://www.qaprosoft.com/</url>
 
 	<properties>
@@ -48,9 +48,20 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>9.4.0.jre11</version>
+		</dependency>
+		<dependency>
 			<groupId>com.qaprosoft</groupId>
 			<artifactId>carina-core</artifactId>
-			<version>${carina-core_version}</version>
+			<version>7.2.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.0.8</version>
 		</dependency>
 		<dependency>
 			<groupId>com.qaprosoft</groupId>
@@ -67,16 +78,16 @@
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
-			<version>2.13.3</version>
+			<version>2.17.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.13.3</version>
+			<version>2.17.1</version>
 		</dependency>
 
 		<dependency>
-			<!--we need it to reuse benefits of zebrunner testng agent for webdriver
+			<!--we need it to reuse benefits of zebrunner testng agent for webdriver 
 				sesssion(s) declaration -->
 			<groupId>net.bytebuddy</groupId>
 			<artifactId>byte-buddy</artifactId>
@@ -122,52 +133,56 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<release>${java.version}</release>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>3.1.2</version>
-				<executions>
-					<execution>
-						<id>copy</id>
-						<phase>initialize</phase>
-						<goals>
-							<goal>copy</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<artifactItems>
-						<artifactItem>
-							<groupId>com.zebrunner</groupId>
-							<artifactId>agent-core</artifactId>
-							<version>${zebrunner-agent.version}</version>
-							<outputDirectory>${project.build.directory}/agent</outputDirectory>
-							<destFileName>zebrunner-agent.jar</destFileName>
-						</artifactItem>
-					</artifactItems>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M4</version>
-				<configuration>
-					<argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>
-					<useSystemClassLoader>false</useSystemClassLoader>
-					<suiteXmlFiles>
-						<suiteXmlFile>${project.build.directory}/test-classes/testng_suites/${suite}.xml</suiteXmlFile>
-					</suiteXmlFiles>
-				</configuration>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<release>${java.version}</release>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>3.1.2</version>
+					<executions>
+						<execution>
+							<id>copy</id>
+							<phase>initialize</phase>
+							<goals>
+								<goal>copy</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<artifactItems>
+							<artifactItem>
+								<groupId>com.zebrunner</groupId>
+								<artifactId>agent-core</artifactId>
+								<version>1.6.7</version>
+								<outputDirectory>${project.build.directory}\agent</outputDirectory>
+								<destFileName>zebrunner-agent.jar</destFileName>
+							</artifactItem>
+						</artifactItems>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M4</version>
+					<configuration>
+						<argLine>-javaagent:${project.build.directory}/agent/zebrunner-agent.jar</argLine>
+						<useSystemClassLoader>false</useSystemClassLoader>
+						<suiteXmlFiles>
+							<suiteXmlFile>${project.build.directory}/test-classes/testng_suites/${suite}.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>

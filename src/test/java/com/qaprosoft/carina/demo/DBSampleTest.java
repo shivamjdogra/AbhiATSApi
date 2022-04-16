@@ -18,6 +18,12 @@ package com.qaprosoft.carina.demo;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertNull;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 import org.apache.ibatis.session.SqlSession;
 import org.testng.annotations.Test;
 
@@ -38,6 +44,7 @@ import com.qaprosoft.carina.demo.db.models.UserPreference;
  */
 public class DBSampleTest implements IAbstractTest {
 
+	
 	private static User USER = new User() {
 		{
 			setUsername("bmarley");
@@ -112,4 +119,8 @@ public class DBSampleTest implements IAbstractTest {
 		assertEquals(userPreference.getValue(), USER_PREFERENCE.getValue(), "Preference value must match");
 		assertEquals(userPreference.getUserId(), USER_PREFERENCE.getUserId(), "Preference user id must match");
 	}
+	  
+	
+	
+	 
 }

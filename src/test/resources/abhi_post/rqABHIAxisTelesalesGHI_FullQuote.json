@@ -1,0 +1,320 @@
+{
+  "ClientCreation": {
+    "Member_Customer_ID": "${Member_Customer_ID}",
+    "salutation": "${salutation}",
+    "firstName": "${firstName}",
+    "middleName": "",
+    "lastName": "${lastName}",
+    "dateofBirth": "${dateofBirth}",
+    "gender": "${gender}",
+    "educationalQualification": "",
+    "pinCode": "${pinCode}",
+    "uidNo": "",
+    "maritalStatus": "",
+    "nationality": "Indian",
+    "occupation": "O553",
+    "primaryEmailID": "${primaryEmailID}",
+    "contactMobileNo": "${contactMobileNo}",
+    "stdLandlineNo": "",
+    "panNo": "",
+    "passportNumber": "",
+    "contactPerson": "",
+    "annualIncome": "",
+    "remarks": "",
+    "startDate": "${startDate}",
+    "endDate": "",
+    "IdProof": "Adhaar Card",
+    "residenceProof": "",
+    "ageProof": "",
+    "others": "",
+    "homeAddressLine1": "Mumbai",
+    "homeAddressLine2": "",
+    "homeAddressLine3": "",
+    "homePinCode": "${pinCode}",
+    "homeArea": "",
+    "homeContactMobileNo": "",
+    "homeContactMobileNo2": "",
+    "homeSTDLandlineNo": "",
+    "homeFaxNo": "",
+    "sameAsHomeAddress": "1",
+    "mailingAddressLine1": "",
+    "mailingAddressLine2": "",
+    "mailingAddressLine3": "",
+    "mailingPinCode": "",
+    "mailingArea": "",
+    "mailingContactMobileNo": "",
+    "mailingContactMobileNo2": "",
+    "mailingSTDLandlineNo": "",
+    "mailingSTDLandlineNo2": "",
+    "mailingFaxNo": "",
+    "bankAccountType": "",
+    "bankAccountNo": "",
+    "ifscCode": "",
+    "GSTIN": "",
+    "GSTRegistrationStatus": "Consumers",
+    "IsEIAavailable": "0",
+    "ApplyEIA": "0",
+    "EIAAccountNo": "",
+    "EIAWith": "0",
+    "AccountType": "",
+    "AddressProof": "",
+    "DOBProof": "",
+    "IdentityProof": ""
+  },
+  "PolicyCreationRequest": {
+    "Quotation_Number": "${Quotation_Number}",
+    "MasterPolicyNumber": "${MasterPolicyNumber}",
+    "GroupID": "${GroupID}",
+    "Product_Code": "${Product_Code}",
+    "SumInsured_Type": "",
+    "Policy_Tanure": "1",
+    "Member_Type_Code": "M209",
+    "intermediaryCode": "E116262",
+    "AutoRenewal": "0",
+    "AutoDebit": "0",
+    "intermediaryBranchCode": "10MHMUM01",
+    "agentSignatureDate": "",
+    "Customer_Signature_Date": "",
+    "businessSourceChannel": "",
+    "AssignPolicy": "0",
+    "AssigneeName": "",
+    "leadID": "${leadID}",
+    "Source_Name": "${Source_Name}",
+    "SPID": "1234",
+    "TCN": "",
+    "CRTNO": "",
+    "RefCode1": "1234",
+    "RefCode2": "",
+    "Employee_Number": "628314",
+    "enumIsEmployeeDiscount": "",
+    "QuoteDate": "",
+    "IsPayment": "${IsPayment}",
+    "PaymentMode": "",
+    "PolicyproductComponents": [
+      {
+        "PlanCode": "${Product_Code}",
+        "SumInsured": "${SumInsured}",
+        "SchemeCode": "4112000003"
+      }
+    ]
+  },
+  "MemObj": {
+    "Member": [
+    <#if MemberNo_1?exists>
+      {
+        "MemberNo": "${MemberNo_1}",
+        "Salutation": "${Member1_Salutation}",
+        "First_Name": "${Member1_First_Name}",
+        "Middle_Name": "",
+        "Last_Name": ".",
+        "Gender": "${Member1_Gender}",
+        "DateOfBirth": "${Member1_DateOfBirth}",
+        "Relation_Code": "${Member1_Relation_Code}",
+        "Marital_Status": "",
+        "height": 0.00,
+        "weight": "0",
+        "occupation": "O553",
+        "PrimaryMember": "${Member1_PrimaryMember}",
+        "MemberproductComponents": [
+          {
+            "PlanCode": "${Product_Code}",
+            "MemberQuestionDetails": [
+              {
+                "QuestionCode": "",
+                "Answer": "",
+                "Remarks": ""
+              }
+            ]
+          }
+        ],
+        "MemberPED": [
+          {
+            "PEDCode": "",
+            "Remarks": ""
+          }
+        ],
+        "exactDiagnosis": "",
+        "dateOfDiagnosis": "",
+        "lastDateConsultation": "",
+        "detailsOfTreatmentGiven": "",
+        "doctorName": "",
+        "hospitalName": "",
+        "phoneNumberHosital": "",
+        "Nominee_First_Name": "${Nominee_First_Name}",
+        "Nominee_Last_Name": ".",
+        "Nominee_Contact_Number": "",
+        "Nominee_Home_Address": "",
+        "Nominee_Relationship_Code": "${Nominee_Relationship_Code}"
+      }</#if><#if MemberNo_2?exists>,
+      {
+        "MemberNo": "${MemberNo_2}",
+        "Salutation": "${Member2_Salutation}",
+        "First_Name": "${Member2_First_Name}",
+        "Middle_Name": "",
+        "Last_Name": ".",
+        "Gender": "${Member2_Gender}",
+        "DateOfBirth": "${Member2_DateOfBirth}",
+        "Relation_Code": "${Member2_Relation_Code}",
+        "Marital_Status": "",
+        "height": 0.00,
+        "weight": "0",
+        "occupation": "O553",
+        "PrimaryMember": "${Member2_PrimaryMember}",
+        "MemberproductComponents": [
+          {
+            "PlanCode": "${Product_Code}",
+            "MemberQuestionDetails": [
+              {
+                "QuestionCode": "",
+                "Answer": "",
+                "Remarks": ""
+              }
+            ]
+          }
+        ],
+        "MemberPED": [
+          {
+            "PEDCode": "",
+            "Remarks": ""
+          }
+        ],
+        "exactDiagnosis": "",
+        "dateOfDiagnosis": "",
+        "lastDateConsultation": "",
+        "detailsOfTreatmentGiven": "",
+        "doctorName": "",
+        "hospitalName": "",
+        "phoneNumberHosital": "",
+        "Nominee_First_Name": "${Nominee_First_Name}",
+        "Nominee_Last_Name": ".",
+        "Nominee_Contact_Number": "",
+        "Nominee_Home_Address": "",
+        "Nominee_Relationship_Code": "${Nominee_Relationship_Code}"
+      }</#if><#if MemberNo_3?exists>,
+      {
+        "MemberNo": "${MemberNo_3}",
+        "Salutation": "${Member3_Salutation}",
+        "First_Name":  "${Member3_First_Name}",
+        "Middle_Name": "",
+        "Last_Name": ".",
+        "Gender":  "${Member3_Gender}",
+        "DateOfBirth":  "${Member3_DateOfBirth}",
+        "Relation_Code":  "${Member3_Relation_Code}",
+        "Marital_Status": "",
+        "height": 0.00,
+        "weight": "0",
+        "occupation": "O553",
+        "PrimaryMember":  "${Member3_PrimaryMember}",
+        "MemberproductComponents": [
+          {
+            "PlanCode":  "${Product_Code}",
+            "MemberQuestionDetails": [
+              {
+                "QuestionCode": "",
+                "Answer": "",
+                "Remarks": ""
+              }
+            ]
+          }
+        ],
+        "MemberPED": [
+          {
+            "PEDCode": "",
+            "Remarks": ""
+          }
+        ],
+        "exactDiagnosis": "",
+        "dateOfDiagnosis": "",
+        "lastDateConsultation": "",
+        "detailsOfTreatmentGiven": "",
+        "doctorName": "",
+        "hospitalName": "",
+        "phoneNumberHosital": "",
+        "Nominee_First_Name":  "${Nominee_First_Name}",
+        "Nominee_Last_Name": ".",
+        "Nominee_Contact_Number": "",
+        "Nominee_Home_Address": "",
+        "Nominee_Relationship_Code":  "${Nominee_Relationship_Code}"
+      }</#if><#if MemberNo_4?exists>,
+      {
+        "MemberNo": "${MemberNo_4}",
+        "Salutation": "${Member4_Salutation}",
+        "First_Name": "${Member4_First_Name}",
+        "Middle_Name": "",
+        "Last_Name": ".",
+        "Gender": "${Member4_Gender}",
+        "DateOfBirth": "${Member4_DateOfBirth}",
+        "Relation_Code": "${Member4_Relation_Code}",
+        "Marital_Status": "",
+        "height": 0.00,
+        "weight": "0",
+        "occupation": "O553",
+        "PrimaryMember": "${Member4_PrimaryMember}",
+        "MemberproductComponents": [
+          {
+            "PlanCode": "${Product_Code}",
+            "MemberQuestionDetails": [
+              {
+                "QuestionCode": "",
+                "Answer": "",
+                "Remarks": ""
+              }
+            ]
+          }
+        ],
+        "MemberPED": [
+          {
+            "PEDCode": "",
+            "Remarks": ""
+          }
+        ],
+        "exactDiagnosis": "",
+        "dateOfDiagnosis": "",
+        "lastDateConsultation": "",
+        "detailsOfTreatmentGiven": "",
+        "doctorName": "",
+        "hospitalName": "",
+        "phoneNumberHosital": "",
+        "Nominee_First_Name": "${Nominee_First_Name}",
+        "Nominee_Last_Name": ".",
+        "Nominee_Contact_Number": "",
+        "Nominee_Home_Address": "",
+        "Nominee_Relationship_Code": "${Nominee_Relationship_Code}"
+      }</#if>
+    ]
+  },
+  "ReceiptCreation": {
+    "officeLocation": "Mumbai",
+    "modeOfEntry": "Direct",
+    "cdAcNo": "",
+    "expiryDate": "",
+    "payerType": "Customer",
+    "payerCode": "",
+    "paymentBy": "Customer",
+    "paymentByName": "",
+    "paymentByRelationship": "",
+    "collectionAmount": "${collectionAmount}",
+    "collectionRcvdDate": "${collectionRcvdDate}",
+    "collectionMode": "online",
+    "remarks": "",
+    "instrumentNumber": "${instrumentNumber}",
+    "instrumentDate": "${instrumentDate}",
+    "bankName": "Axis Bank Limited",
+    "branchName": "0",
+    "bankLocation": "",
+    "micrNo": "",
+    "chequeType": "",
+    "ifscCode": "0",
+    "PaymentGatewayName": "AXIS_NETB",
+    "TerminalID": "EuxJCz8cZV9V63",
+    "CardNo": ""
+  },
+  "CombiCreation": {
+    "Combi_flag": "0",
+    "Combi_identifier": "leadid",
+    "Combi_value": "${leadID}",
+    "Combi_code": "${Source_Name}",
+    "Combi_Count": "1",
+    "Combi_product_count": "1"
+  }
+}

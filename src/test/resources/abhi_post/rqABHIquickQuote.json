@@ -1,0 +1,167 @@
+{
+    "PreviousPolicyObj": {
+        "PreviousPolicyDetails": [
+            {}
+        ]
+    },
+    "ReceiptObj": {
+        "ReceiptCreation": [
+            {}
+        ]
+    },
+    "MemObj": {
+        "Member": [
+            {
+                "MemberPEDs": [
+                    {
+                        "PEDCode": "",
+                        "Remarks": "",
+                        "Value": ""
+                    }
+                ],
+                "Middle_Name": "",
+                "Marital_Status": "",
+                "Gender": "${Gender}",
+                "exactDiagnosis": "",
+                "Nominee_Contact_Number": "${Nominee_Contact_Number}",
+                "Salutation": "${Salutation}",
+                "Relation_Code": "${Relation_Code}",,
+                "First_Name": "${First_Name}",
+                "PrimaryMember": "${PrimaryMember}",
+                "doctorName": "",
+                "dateOfDiagnosis": "",
+                "Nominee_First_Name": "${Nominee_First_Name}",
+                "Member_Contact_Number": "${Member_Contact_Number}",
+                "email": "${email}",
+                "height": "${height}",
+                "DateOfBirth": "${DateOfBirth}",
+                "IdProof": "${IdProof}",
+                "Nominee_Last_Name": "${Nominee_Last_Name}",
+                "labReport": "",
+                "phoneNumberHosital": "",
+                "Nominee_Relationship_Code": "${Nominee_Relationship_Code}",
+                "weight": "${weight}",
+                "lastDateConsultation": "",
+                "hospitalName": "",
+                "MemberproductComponents": [
+                    {
+                        "Deductible": "${Deductible}",
+                        "CoversDetails": [
+                            {
+                                "CoverPartCode": "",
+                                "CoverSI": "",
+                                "PlanCode": "${PlanCode}",
+                                "CoverCode": ""
+                            }
+                        ],
+                        "SumInsured": "${SumInsured}",
+                        "PlanCode": "${PlanCode}",
+                        "ChronicDetails": ""
+                    }
+                ],
+                "dischargeCardSummary": "",
+                "Last_Name": "${Last_Name}",
+                "PreviousCurrentInsuranceDetails": {},
+                "detailsOfTreatmentGiven": "",
+                "MemberNo": "${MemberNo}",
+            }
+        ]
+    },
+    "PolicyCreationRequest": {
+        "Source_Name": "${Source_Name}",
+        "IsPayment": "${IsPayment}",
+        "Office_Code": "${Office_Code}",
+        "EnumIsMandate": "${EnumIsMandate}",
+        "agentSignatureDate": "${agentSignatureDate}",
+        "TrackerRefCode": "",
+        "businessSourceChannel": "${businessSourceChannel}",
+        "BusinessType": "${BusinessType}",
+        "AutoDebit": "${AutoDebit}",
+        "QuoteDate": "${QuoteDate}",,
+        "Is_Combi": "${Is_Combi}",
+        "CRTNO": "",
+        "intermediaryBranchCode": "${intermediaryBranchCode}",
+        "Customer_Signature_Date": "${Customer_Signature_Date}",
+        "goGreen": "${goGreen}",
+        "AutoRenewal": "${AutoRenewal}",
+        "enumIsEmployeeDiscount": "${enumIsEmployeeDiscount}",
+        "PolicyproductComponents": [
+            {
+                "SumInsured_Type": "${SumInsured_Type}",
+                "ProductCode": "${ProductCode}",
+                "PlanCode": "${PlanCode}",
+                "Member_Type_Code": "${Member_Type_Code}",
+                "Policy_Tanure": "${Policy_Tanure}",
+            }
+        ],
+        "intermediaryCode": "${intermediaryCode}",
+        "SPID": "",
+        "TCN": "",
+        "RefCode6": "",
+        "leadID": "${leadID}",
+    },
+    "ClientCreation": {
+        "homeSTDLandlineNo": "",
+        "homeSTDLandlineNo2": "",
+        "dateofBirth": "${dateofBirth}",
+        "GSTIN": "",
+        "occupation": "",
+        "mailingSTDLandlineNo2": "",
+        "endDate": "",
+        "bankAccountNo": "${bankAccountNo}",
+        "GSTRegistrationStatus": "${GSTRegistrationStatus}",
+        "IsEIAavailable": "${IsEIAavailable}",
+        "InternationalContactNo": "",
+        "mailingPinCode": "${mailingPinCode}",
+        "uidNo": "",
+        "mailingAddressLine3": "",
+        "mailingAddressLine1": "",
+        "mailingAddressLine2": "",
+        "mailingContactMobileNo": "",
+        "NonIndian": "",
+        "others": "",
+        "ApplyEIA": "${ApplyEIA}",
+        "IdProof": "${IdProof}",
+        "homeContactMobileNo2": "",
+        "primaryEmailID": "${email}",
+        "homeAddressLine2": "${homeAddressLine2}",
+        "homeAddressLine1": "${homeAddressLine1}",
+        "homeAddressLine3": "",
+        "firstName": "${First_Name}",
+        "nationality": "${nationality}",
+        "bankAccountType": "${bankAccountType}",
+        "pinCode": "${pinCode}",
+        "sameAsHomeAddress": "",
+        "salutation": "${Salutation}",,
+        "maritalStatus": "${maritalStatus}",
+        "startDate": "",
+        "lastName": "${lastName}",
+        "annualIncome": "${annualIncome}",
+        "gender": "${Gender}",
+        "homeFaxNo": "",
+        "contactPerson": "",
+        "mailingArea": "",
+        "homePinCode": "${homePinCode}",
+        "EmergencyContactNo": "",
+        "IdentityProof": "",
+        "mailingContactMobileNo2": "",
+        "ifscCode": "${ifscCode}",
+        "residenceProof": "",
+        "EIAWith": "",
+        "stdLandlineNo": "",
+        "panNo": "",
+        "contactMobileNo": "${Member_Contact_Number}",
+        "AddressProof": "",
+        "homeContactMobileNo": "",
+        "AccountType": "${AccountType}",
+        "mailingFaxNo": "",
+        "ageProof": "${ageProof}",
+        "UIDAcknowledgementNo": "",
+        "homeArea": "",
+        "DOBProof": "",
+        "educationalQualification": "${educationalQualification}",
+        "middleName": "",
+        "mailingSTDLandlineNo": "",
+        "remarks": ""
+    }
+}

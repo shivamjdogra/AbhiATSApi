@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="TP-Motor_API_Automation" >
+	<listeners>
+	<listener class-name="ExtentReport.Listeners" />
+	</listeners>
+	
+
+	<test name="TP-Motor_API_Automation">
+		<classes>
+			<class name="com.lgi.tp.api.test.ThirdPartyAPI" />
+		</classes>
+	</test>
+
+</suite>

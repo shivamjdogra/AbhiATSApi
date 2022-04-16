@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qaprosoft.carina.demo.regression.dataprovider.DataproviderRetryTest1"/>
+      <class name="com.qaprosoft.carina.demo.HelloWorld"/>
+      <class name="com.qaprosoft.carina.demo.CryptoSampleTest"/>
+      <class name="com.qaprosoft.carina.demo.MobileSampleTest"/>
+      <class name="com.qaprosoft.carina.demo.WebSampleSingleDriver"/>
+      <class name="com.qaprosoft.carina.demo.regression.dataprovider.DataproviderRetryTest2"/>
+      <class name="com.qaprosoft.carina.demo.WebSampleSingleDriver2"/>
+      <class name="com.qaprosoft.carina.demo.WebMultipleBrowserTest"/>
+      <class name="com.qaprosoft.carina.demo.regression.dataprovider.XlsDataproviderRetryTest"/>
+      <class name="abhi_API.ABHIQQ"/>
+      <class name="com.qaprosoft.carina.demo.WebSampleTest"/>
+      <class name="com.qaprosoft.carina.demo.WebLocalizationSample"/>
+      <class name="com.qaprosoft.carina.demo.APISampleTest"/>
+      <class name="com.qaprosoft.carina.demo.DataprovidersSampleTest"/>
+      <class name="com.qaprosoft.carina.demo.SQL"/>
+      <class name="com.qaprosoft.carina.demo.regression.dataprovider.DataproviderRetryTest"/>
+      <class name="com.qaprosoft.carina.demo.DBSampleTest"/>
+      <class name="com.qaprosoft.carina.demo.ProxySampleTest"/>
+      <class name="com.qaprosoft.carina.demo.PageOpeningStrategySampleTest"/> 
+      <!-- <class name="abhi_API.RetailRunner"/> -->
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
