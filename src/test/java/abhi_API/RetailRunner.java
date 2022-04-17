@@ -37,7 +37,7 @@ public class RetailRunner implements IAbstractTest {
 		String scriptDirectory = System.getProperty("user.dir");
 		String testdataPath = scriptDirectory + "/src/test/resources/xls/retail.xls";
 		String xlsSheetName = "sheet1";
-		// sysout
+
 		String TUID = data.get("TUID");
 		System.out.println(TUID);
 		ReportContext.setCustomTestDirName(TUID);
@@ -129,11 +129,12 @@ public class RetailRunner implements IAbstractTest {
 				} 
 				else {
 					xlsReader.setCellData(xlsSheetName, "QQ_ErrorMessage", xlsRowNum, "FAIL: " + errorMessage);
+					throw new Exception();
 				}
-				
-				xlsReader.setCellData(xlsSheetName, "Execution_Status", xlsRowNum, "PASS");
 			}
-
+			
+			xlsReader.setCellData(xlsSheetName, "Execution_Status", xlsRowNum, "PASS");
+			
 		} catch (Exception e) {
 			xlsReader.setCellData(xlsSheetName, "Execution_Status", xlsRowNum, "FAIL");
 			e.printStackTrace();
